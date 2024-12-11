@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="./css/main.css" rel="stylesheet">
-    <title>Contacto - SkyTrack</title>
+    <title>Elemento-API - SkyTrack</title>
 </head>
 <body>
     <!-- Encabezado -->
@@ -14,32 +14,39 @@
         <a href="#" class="btn-back">Volver</a>
     </header>
 
-    <!-- Contenido principal -->
-    <main class="main">
-        <h2>Formulario de Contacto</h2>
-        <form class="contact-form">
-            <div class="form-group">
-                <label for="name">Nombre</label>
-                <input type="text" id="name" name="name" placeholder="Tu nombre">
-            </div>
-            <div class="form-group">
-                <label for="surname">Apellido</label>
-                <input type="text" id="surname" name="surname" placeholder="Tu apellido">
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Tu correo electrónico">
-            </div>
-            <div class="form-group">
-                <label for="phone">Teléfono</label>
-                <input type="tel" id="phone" name="phone" placeholder="Tu número de teléfono">
-            </div>
-            <div class="form-group">
-                <label for="subject">Asunto</label>
-                <input type="text" id="subject" name="subject" placeholder="Asunto">
-            </div>
-            <button type="submit" class="btn-submit">Enviar</button>
-        </form>
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="flight-details">
+            <h2>Detalles del Vuelo</h2>
+            <p><strong>Origen:</strong> Ciudad y Aeropuerto de salida</p>
+            <p><strong>Fecha y Hora de salida:</strong> Fecha y Hora</p>
+            <p><strong>Destino:</strong> Ciudad y Aeropuerto de llegada</p>
+            <p><strong>Duración total del vuelo:</strong> Tiempo total</p>
+            <p><strong>Tiempo de vuelo:</strong> Tiempo efectivo</p>
+        </section>
+
+        <section class="flight-info">
+            <h3>Información Adicional</h3>
+            <p><strong>Precio:</strong> XXX</p>
+            <p><strong>Estado de Vuelo:</strong> XXX</p>
+            <p><strong>Asientos disponibles:</strong> XXX</p>
+            <p><strong>Política de cambios/cancelaciones:</strong> Detalles</p>
+        </section>
+
+        <section class="luggage">
+            <h3>Detalles del Equipaje</h3>
+            <p><strong>Equipaje de Mano:</strong> Detalles</p>
+            <p><strong>Equipaje Facturado:</strong> Detalles</p>
+        </section>
+
+        <section class="services">
+            <h3>Servicios Incluidos</h3>
+            <ul>
+                <li>Servicio 1</li>
+                <li>Servicio 2</li>
+                <li>Servicio 3</li>
+            </ul>
+        </section>
     </main>
 
     <!-- Pie de página -->

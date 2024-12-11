@@ -1,4 +1,4 @@
-/* Estilos globales */
+/* General Styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,88 +7,71 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  line-height: 1.6;
+  font-size: 16px;
+  background-color: #f4f4f4;
   color: #333;
-  background: #f4f4f4;
-  margin: 0;
+  line-height: 1.6;
 }
 
-/* Header */
+/* Header Styles */
 .header {
   background: #003366;
-  color: #fff;
+  color: white;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header-title {
+.header h1 {
   font-size: 24px;
 }
 
-.btn-back {
-  color: #fff;
+.header .btn-back {
+  color: white;
   text-decoration: none;
   font-size: 18px;
 }
 
-/* Main Content */
-.main {
-  width: 80%;
-  max-width: 1200px;
-  margin: 20px auto;
-  background: #fff;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.main h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.user-profile-form {
+.main-content {
+  width: 100%;
+  min-height: calc(100vh - 200px); /* Resta la altura del header y footer */
+  background-color: #fff;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
 }
 
-.form-group {
+.flight-details, .flight-info, .luggage, .services {
   width: 100%;
-  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
+.flight-details h2, .flight-info h3, .luggage h3, .services h3 {
+  font-size: 24px;
+  color: #003366;
+  margin-bottom: 15px;
 }
 
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 10px;
-  font-size: 14px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.btn-submit {
-  background: #003366;
-  color: #fff;
-  padding: 10px 20px;
+.flight-details p, .flight-info p, .luggage p, .services ul {
   font-size: 16px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 20px;
+  color: #666;
+  line-height: 1.6;
 }
 
-.btn-submit:hover {
-  background: #0055cc;
+.flight-info ul, .services ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.flight-info ul li, .services ul li {
+  margin: 10px 0;
 }
 
 /* Footer Styles */
@@ -134,5 +117,3 @@ body {
 .footer .social-media a {
   margin-right: 10px;
 }
-
-

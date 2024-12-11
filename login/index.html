@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="./css/main.css" rel="stylesheet">
-    <title>Contacto - SkyTrack</title>
+    <title>Login - SkyTrack</title>
 </head>
 <body>
     <!-- Encabezado -->
@@ -14,32 +14,32 @@
         <a href="#" class="btn-back">Volver</a>
     </header>
 
-    <!-- Contenido principal -->
-    <main class="main">
-        <h2>Formulario de Contacto</h2>
-        <form class="contact-form">
-            <div class="form-group">
-                <label for="name">Nombre</label>
-                <input type="text" id="name" name="name" placeholder="Tu nombre">
-            </div>
-            <div class="form-group">
-                <label for="surname">Apellido</label>
-                <input type="text" id="surname" name="surname" placeholder="Tu apellido">
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Tu correo electrónico">
-            </div>
-            <div class="form-group">
-                <label for="phone">Teléfono</label>
-                <input type="tel" id="phone" name="phone" placeholder="Tu número de teléfono">
-            </div>
-            <div class="form-group">
-                <label for="subject">Asunto</label>
-                <input type="text" id="subject" name="subject" placeholder="Asunto">
-            </div>
-            <button type="submit" class="btn-submit">Enviar</button>
-        </form>
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="login-section">
+            <h2 class="login-title">Iniciar sesión</h2>
+            
+            <!-- Formulario de login -->
+            <form action="#" method="POST" class="login-form">
+                <div class="form-group">
+                    <label for="username" class="form-label">Usuario</label>
+                    <input type="text" id="username" name="username" class="form-input" placeholder="Introduce tu usuario" required>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" id="password" name="password" class="form-input" placeholder="Introduce tu contraseña" required>
+                </div>
+                
+                <!-- Enlaces de ayuda -->
+                <div class="login-links">
+                    <a href="#" class="forgot-password-link">¿Olvidaste tu contraseña?</a>
+                    <a href="#" class="create-account-link">¿No tienes cuenta? Crear cuenta</a>
+                </div>
+
+                <!-- Botón de inicio de sesión -->
+                <button type="submit" class="login-button">Iniciar sesión</button>
+            </form>
+        </section>
     </main>
 
     <!-- Pie de página -->
