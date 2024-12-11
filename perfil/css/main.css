@@ -1,0 +1,154 @@
+/* Estilos globales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background: #f4f4f4;
+  margin: 0;
+}
+
+/* Header */
+.header {
+  background: #003366;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 24px;
+}
+
+.btn-back {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Main Content */
+.main {
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-profile-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group {
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.btn-submit {
+  background: #003366;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.btn-submit:hover {
+  background: #0055cc;
+}
+
+.footer {
+  background-color: rgba(0, 51, 102, 1);
+  color: #fff;
+  padding: 20px 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ddd;
+}
+
+/* Navegación rápida */
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer .social-media {
+  flex: 1;
+  min-width: 150px;
+  text-align: center;
+}
+
+.social-media p {
+  margin-bottom: 10px;
+}
+
+.social-media a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.social-media a:hover {
+  color: #ddd;
+}
+
