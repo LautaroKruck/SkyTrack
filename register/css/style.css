@@ -60,10 +60,10 @@ body {
   padding: 20px;
 }
 
-/* Estilos de la sección de login */
+/* Estilos de la sección de register */
 .register-section {
   width: 100%;
-  max-width: 400px; /* Limita el ancho máximo */
+  max-width: 800px; /* Limita el ancho máximo */
   background-color: #fff;
   padding: 30px;
   border-radius: 8px;
@@ -110,25 +110,6 @@ body {
   border-color: #007BFF;
 }
 
-/* Enlaces de ayuda */
-.register-links {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  text-align: center;
-}
-
-.register-links {
-  font-size: 14px;
-  color: #007BFF;
-  text-decoration: none;
-}
-
-
-.register-link:hover {
-  text-decoration: underline;
-}
-
 .checkbox-group {
   display: flex;
   align-items: center;
@@ -148,6 +129,25 @@ body {
   text-decoration: underline;
 }
 
+
+/* Enlaces de ayuda */
+.register-link {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.register-link {
+  font-size: 14px;
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
+
 .register-button {
   padding: 12px;
   font-size: 16px;
@@ -162,20 +162,6 @@ body {
 
 .register-button:hover {
   background-color: #0056b3;
-}
-
-/* Enlaces adicionales */
-.additional-links {
-  text-align: center;
-}
-
-.additional-links a {
-  color: #007BFF;
-  text-decoration: none;
-}
-
-.additional-links a:hover {
-  text-decoration: underline;
 }
 
 /* Footer Styles */
