@@ -13,39 +13,103 @@ body {
 
 /* Encabezado */
 .header {
-  width: 100%;
   background-color: #003366;
-  color: #fff;
-  padding: 20px 0;
-  position: relative;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
 }
 
-.container {
-  width: 90%;
-  margin: 0 auto;
+.header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 1400px;
 }
 
-.header-title {
-  font-size: 32px;
+.web-title {
+  font-size: 28px;
   font-weight: bold;
 }
 
-.header-nav {
+.user-links {
   display: flex;
-  align-items: center;
+  gap: 15px;
 }
 
-.btn-back {
-  background-color: #fff;
-  color: #003366;
-  padding: 8px 20px;
-  border-radius: 4px;
+.user-links .btn {
+  color: white;
   text-decoration: none;
-  font-weight: 500;
+  background-color: #007BFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
 }
+
+.user-links .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Middle Section Styles */
+.header-middle {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.input-field {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  width: calc(25% - 15px);
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.input-field:focus {
+  box-shadow: 0 0 5px #007BFF;
+}
+
+/* Bottom Section Styles */
+.header-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.dropdown {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  width: calc(25% - 15px);
+}
+
+.search-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
 
 /* Sección Principal */
 .main {
@@ -71,32 +135,100 @@ body {
 
 /* Información del vuelo */
 .flight-info {
-  width: 90%;
-  margin: 40px auto;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  color: #333;
 }
 
 .flight-info h3 {
-  font-size: 28px;
+  font-size: 24px;
   margin-bottom: 20px;
+  text-align: center;
+  color: #003366;
 }
 
-.flight-details {
-  background-color: #fff;
+/* Flight Card Layout */
+.flight-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 15px;
 }
 
-.flight-detail {
-  margin-bottom: 15px;
+/* Each Section Style */
+.flight-schedule {
+  flex: 2;
+  border-right: 1px solid #ccc;
+  padding-right: 15px;
 }
 
-.flight-detail strong {
+.flight-duration {
+  flex: 1;
+  text-align: center;
+}
+
+.flight-class {
+  flex: 1;
+  text-align: center;
+}
+
+/* Button Section */
+.flight-details-button {
+  flex: 1;
+  text-align: right;
+}
+
+.details-btn {
+  display: inline-block;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
   font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-.flight-detail span {
-  color: #555;
+.details-btn:hover {
+  background-color: #0056b3;
+}
+
+.flight-schedule p,
+.flight-duration p,
+.flight-class p {
+  margin: 5px 0;
+}
+
+.flight-class strong {
+  color: #007BFF;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .flight-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .flight-schedule {
+    border-right: none;
+    padding-right: 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+  }
+
+  .flight-details-button {
+    text-align: center;
+    margin-top: 15px;
+  }
 }
 
 /* Pie de página */

@@ -10,13 +10,41 @@
 <body>
   <!-- Encabezado -->
   <header class="header">
-    <div class="container">
-      <h1 class="header-title">SkyTrack</h1>
-      <nav class="header-nav">
-        <a href="/login/index.html" class="btn-back">Iniciar sesión</a>
-      </nav>
+    <!-- Primera fila: Título y enlaces -->
+    <div class="header-top">
+      <h1 class="web-title">SkyTrack</h1>
+      <div class="user-links">
+        <a href="/login" class="btn">Iniciar Sesión</a>
+        <a href="/register" class="btn">Registrarse</a>
+        <a href="/help" class="btn">Ayuda</a>
+      </div>
     </div>
-  </header>
+  
+    <!-- Segunda fila: Inputs de origen, destino y fechas -->
+    <div class="header-middle">
+      <input type="text" class="input-field" placeholder="Origen">
+      <input type="text" class="input-field" placeholder="Destino">
+      <input type="date" class="input-field" placeholder="Fecha de salida">
+      <input type="date" class="input-field" placeholder="Fecha de regreso">
+    </div>
+  
+    <!-- Tercera fila: Número de personas, clase y botón de buscar -->
+    <div class="header-bottom">
+      <select class="dropdown" aria-label="Número de personas">
+        <option value="1">1 persona</option>
+        <option value="2">2 personas</option>
+        <option value="3">3 personas</option>
+        <option value="4">4 personas</option>
+      </select>
+      <select class="dropdown" aria-label="Clase">
+        <option value="economy">Económica</option>
+        <option value="turist">Turista</option>
+        <option value="business">Business</option>
+        <option value="first-class">Primera clase</option>
+      </select>
+      <button class="search-button">Buscar</button>
+    </div>
+  </header>  
 
   <!-- Sección Principal -->
   <main class="main">
@@ -27,30 +55,32 @@
 
     <section class="flight-info">
       <h3>Información del vuelo</h3>
-      <div class="flight-details">
-        <div class="flight-detail">
-          <strong>Número de vuelo:</strong> <span>XXX123</span>
+      <div class="flight-card">
+        <!-- Horario y Aerolínea -->
+        <div class="flight-schedule">
+          <p><strong>Salida:</strong> 10:00 AM, 12 Dic 2024, Madrid</p>
+          <p><strong>Llegada:</strong> 12:00 PM, 12 Dic 2024, Barcelona</p>
+          <p><strong>Aerolínea:</strong> Iberia</p>
         </div>
-        <div class="flight-detail">
-          <strong>Ruta:</strong> <span>Madrid - Barcelona</span>
+        <!-- Duración -->
+        <div class="flight-duration">
+          <p><strong>Duración:</strong> 2 horas</p>
         </div>
-        <div class="flight-detail">
-          <strong>Aerolínea:</strong> <span>Iberia</span>
+        <!-- Clase Turista -->
+        <div class="flight-class">
+          <p><strong>Clase Turista:</strong> €200</p>
         </div>
-        <div class="flight-detail">
-          <strong>Origen:</strong> <span>Madrid</span>
+        <!-- Clase Business -->
+        <div class="flight-class">
+          <p><strong>Business Class:</strong> €500</p>
         </div>
-        <div class="flight-detail">
-          <strong>Destino:</strong> <span>Barcelona</span>
-        </div>
-        <div class="flight-detail">
-          <strong>Duración total:</strong> <span>2 horas</span>
-        </div>
-        <div class="flight-detail">
-          <strong>Precio:</strong> <span>€200</span>
+        <!-- Botón Ver Detalles -->
+        <div class="flight-details-button">
+          <a href="detalles-vuelo.html" class="details-btn">Ver detalles</a>
         </div>
       </div>
     </section>
+    
   </main>
 
   <!-- Pie de página -->
