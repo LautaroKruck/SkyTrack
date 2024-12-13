@@ -14,9 +14,9 @@
     <div class="header-top">
       <h1 class="web-title">SkyTrack</h1>
       <div class="user-links">
-        <a href="/login" class="btn">Iniciar Sesión</a>
-        <a href="/register" class="btn">Registrarse</a>
-        <a href="/help" class="btn">Ayuda</a>
+        <a href="../login/index.html" class="btn">Iniciar Sesión</a>
+        <a href="../register/index.html" class="btn">Registrarse</a>
+        <a href="../contacto/index.html" class="btn">Ayuda</a>
       </div>
     </div>
   
@@ -42,16 +42,23 @@
         <option value="business">Business</option>
         <option value="first-class">Primera clase</option>
       </select>
-      <button class="search-button">Buscar</button>
+      <a href="../vuelos/index.html" class="search-button">Buscar</a>
     </div>
   </header>  
 
   <!-- Sección Principal -->
   <main class="main">
     <section class="hero">
-      <h2>¿Quieres irte de vacaciones?</h2>
-      <p>Los mejores vuelos a un solo clic de distancia.</p>
+      <div class="hero-content">
+          <h2>¿Quieres irte de vacaciones?</h2>
+          <p>Los mejores vuelos a un solo clic de distancia.</p>
+          <a href="../vuelos/index.html" class="hero-btn">Ver Ofertas</a>
+      </div>
+      <div class="hero-image">
+          <img src="../inicio/images/playa.png" alt="Destino de vacaciones">
+      </div>
     </section>
+  
 
     <section class="flight-info">
       <h3>Información del vuelo</h3>
@@ -68,59 +75,62 @@
         </div>
         <!-- Clase Turista -->
         <div class="flight-class">
-          <p><strong>Clase Turista:</strong> €200</p>
+          <p><strong>Clase Turista:</strong> €80</p>
         </div>
         <!-- Clase Business -->
         <div class="flight-class">
-          <p><strong>Business Class:</strong> €500</p>
+          <p><strong>Business Class:</strong> €300</p>
         </div>
         <!-- Botón Ver Detalles -->
         <div class="flight-details-button">
-          <a href="detalles-vuelo.html" class="details-btn">Ver detalles</a>
+          <a href="../elemento-API/index.html" class="details-btn">Ver detalles</a>
         </div>
       </div>
     </section>
     
   </main>
 
-  <!-- Pie de página -->
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-section">
-        <h3>Navegación Rápida</h3>
-        <ul>
-          <li><a href="/inicio/index.html">Inicio</a></li>
-          <li><a href="/error-404/index.html">Ofertas</a></li>
-          <li><a href="/login/index.html">Login</a></li>
-          <li><a href="/register/index.html">Registro</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h3>Información de Contacto</h3>
-        <ul>
-          <li>Contacto: <a href="mailto:soportetecnico@skytrack.com">soportetecnico@skytrack.com</a></li>
-          <li>Teléfono: +34 123 456 789</li>
-          <li>Dirección: C. Amiel, 11012, Cádiz</li>
-          <li><a href="/contacto/index.html">¿Necesitas ayuda? Soporte</a></li>
+<!-- Pie de página -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Navegación Rápida</h3>
+      <ul>
+        <li><a href="../inicio/index.html">Inicio</a></li>
+        <li><a href="../vuelos/index.html">Ofertas</a></li>
+        <li><a href="../login/index.html">Login</a></li>
+        <li><a href="../register/index.html">Registro</a></li>
       </ul>
-      </div>
-      <div class="footer-section">
-        <h3>Términos y Políticas</h3>
-        <ul>
-          <li><a href="terms.html">Términos y Condiciones</a></li>
-          <li><a href="privacy.html">Política de Privacidad</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h3>Redes Sociales</h3>
-        <p>Síguenos en nuestras redes sociales:</p>
-        <ul class="social-media">
-          <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-          <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-          <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-        </ul>
-      </div>
     </div>
-  </footer>
+    <div class="footer-section">
+      <h3>Información de Contacto</h3>
+      <ul>
+        <li>Contacto: <a href="mailto:soportetecnico@skytrack.com">soportetecnico@skytrack.com</a></li>
+        <li>Teléfono: +34 123 456 789</li>
+        <li>Dirección: C. Amiel, 11012, Cádiz</li>
+        <li><a href="../contacto/index.html">¿Necesitas ayuda? Soporte</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Términos y Políticas</h3>
+      <ul>
+        <li><a href="terms.html">Términos y Condiciones</a></li>
+        <li><a href="privacy.html">Política de Privacidad</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Redes Sociales</h3>
+      <p>Síguenos en nuestras redes sociales:</p>
+      <ul class="social-media">
+        <li><a href="https://facebook.com" target="_blank" aria-label="Facebook">Facebook</a></li>
+        <li><a href="https://twitter.com" target="_blank" aria-label="Twitter">Twitter</a></li>
+        <li><a href="https://instagram.com" target="_blank" aria-label="Instagram">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 SkyTrack. Todos los derechos reservados.</p>
+  </div>
+</footer> 
 </body>
 </html>

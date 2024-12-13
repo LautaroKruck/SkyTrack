@@ -36,103 +36,207 @@ body {
 
 /* Main Content */
 .main {
-  width: 80%;
-  max-width: 1200px;
+  font-family: Arial, sans-serif;
   margin: 20px auto;
-  background: #fff;
-  border-radius: 8px;
+  max-width: 800px;
   padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
 }
 
-.main h2 {
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.profile-header {
   text-align: center;
   margin-bottom: 20px;
 }
 
-.user-profile-form {
+.profile-photo {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-photo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #007BFF;
+}
+
+.upload-label {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #007BFF;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+form .form-row {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  gap: 15px;
 }
 
-.form-group {
-  width: 100%;
-  max-width: 400px;
+form .form-group {
+  display: flex;
+  flex-direction: column;
 }
 
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
+form .form-group label {
   font-weight: bold;
+  margin-bottom: 5px;
 }
 
-.form-group input,
-.form-group textarea {
-  width: 100%;
+form .form-group input,
+form .form-group textarea {
   padding: 10px;
-  font-size: 14px;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   border-radius: 4px;
+  font-size: 14px;
+}
+
+form .form-group input:focus,
+form .form-group textarea:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+form .form-group.full-width {
+  flex: 1;
+}
+
+form .form-group.half-width {
+  flex: 0.48;
 }
 
 .btn-submit {
-  background: #003366;
-  color: #fff;
-  padding: 10px 20px;
-  font-size: 16px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin-top: 20px;
+  font-size: 16px;
 }
 
 .btn-submit:hover {
-  background: #0055cc;
+  background-color: #0056b3;
 }
 
-/* Footer Styles */
+
+/* Pie de página */
 .footer {
-  background: #003366;
+  background-color: #003366;
   color: white;
-  padding: 20px 40px;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+  width: 90%;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.footer .footer-section {
-  flex: 1;
-  min-width: 200px;
-  margin: 10px;
+.footer-section {
+  width: 100%;
+  max-width: 23%;
+  margin-bottom: 20px;
 }
 
-.footer h3 {
+.footer-section h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-section ul li {
   margin-bottom: 10px;
-  font-size: 18px;
-  border-bottom: 2px solid white;
-  padding-bottom: 5px;
 }
 
-.footer ul {
-  list-style: none;
-}
-
-.footer ul li {
-  margin-bottom: 5px;
-}
-
-.footer ul li a {
+.footer-section ul li a {
   color: white;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.footer ul li a:hover {
+.footer-section ul li a:hover {
+  text-decoration: underline;
+  color: #ffcc00;
+}
+
+.social-media {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+  padding-left: 0;
+}
+
+.social-media li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.social-media li a:hover {
+  color: #ffcc00;
   text-decoration: underline;
 }
 
-.footer .social-media a {
-  margin-right: 10px;
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccc;
 }
 
+.footer-bottom p {
+  margin: 0;
+}
 
+@media screen and (max-width: 768px) {
+  .footer-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-media {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-section h3 {
+    font-size: 20px;
+  }
+
+  .social-media li a {
+    font-size: 14px;
+  }
+}

@@ -16,72 +16,103 @@
 
     <!-- Main Content -->
     <main class="main-content">
+        <!-- Detalles del Vuelo -->
         <section class="flight-details">
             <h2>Detalles del Vuelo</h2>
-            <p><strong>Origen:</strong> Ciudad y Aeropuerto de salida</p>
-            <p><strong>Fecha y Hora de salida:</strong> Fecha y Hora</p>
-            <p><strong>Destino:</strong> Ciudad y Aeropuerto de llegada</p>
-            <p><strong>Duración total del vuelo:</strong> Tiempo total</p>
-            <p><strong>Tiempo de vuelo:</strong> Tiempo efectivo</p>
+            <p><strong>Origen:</strong> Ciudad y Aeropuerto de salida (Ejemplo: Madrid - Barajas)</p>
+            <p><strong>Fecha y Hora de salida:</strong> Fecha y Hora (Ejemplo: 20/12/2024 - 08:00 AM)</p>
+            <p><strong>Destino:</strong> Ciudad y Aeropuerto de llegada (Ejemplo: Barcelona - El Prat)</p>
+            <p><strong>Duración total del vuelo:</strong> 3h 15m</p>
+            <p><strong>Clase:</strong> Turista</p>
         </section>
 
+        <!-- Información del Vuelo -->
         <section class="flight-info">
             <h3>Información Adicional</h3>
-            <p><strong>Precio:</strong> XXX</p>
-            <p><strong>Estado de Vuelo:</strong> XXX</p>
-            <p><strong>Asientos disponibles:</strong> XXX</p>
-            <p><strong>Política de cambios/cancelaciones:</strong> Detalles</p>
+            <p><strong>Precio:</strong> 80 €</p>
+            <p><strong>Estado de Vuelo:</strong> Confirmado</p>
+            <p><strong>Asientos Disponibles:</strong> 12</p>
+            <p><strong>Política de Cambios/Cancelaciones:</strong> Se permiten cambios con un cargo adicional.</p>
         </section>
 
+        <!-- Detalles del Equipaje -->
         <section class="luggage">
             <h3>Detalles del Equipaje</h3>
-            <p><strong>Equipaje de Mano:</strong> Detalles</p>
-            <p><strong>Equipaje Facturado:</strong> Detalles</p>
+            <p><strong>Equipaje de Mano:</strong> 1 pieza, máx. 7 kg</p>
+            <p><strong>Equipaje Facturado:</strong> Hasta 23 kg incluido en el precio</p>
         </section>
 
+        <!-- Servicios Incluidos -->
         <section class="services">
             <h3>Servicios Incluidos</h3>
             <ul>
-                <li>Servicio 1</li>
-                <li>Servicio 2</li>
-                <li>Servicio 3</li>
+                <li><i class="icon-food"></i> <strong>Comida a Bordo:</strong> Incluido</li>
+                <li><i class="icon-wifi"></i> <strong>Wi-Fi:</strong> Disponible (5 €/hora)</li>
+                <li><i class="icon-entertainment"></i> <strong>Entretenimiento:</strong> Películas y Música Incluidas</li>
+                <li><i class="icon-power"></i> <strong>Carga de Dispositivos:</strong> Puerto USB disponible</li>
             </ul>
+        </section>
+
+        <!-- Compra -->
+        <section class="purchase">
+            <h3>Reserva tu Vuelo</h3>
+            <form action="/purchase" method="POST">
+                <label for="passengers">Número de Pasajeros:</label>
+                <input type="number" id="passengers" name="passengers" min="1" max="12" required>
+
+                <label for="seat-selection">Selección de Asientos:</label>
+                <select id="seat-selection" name="seat-selection">
+                    <option value="window">Ventana</option>
+                    <option value="aisle">Pasillo</option>
+                    <option value="random">Cualquiera</option>
+                </select>
+
+                <button type="submit" class="btn btn-primary">Reservar Ahora</button>
+            </form>
         </section>
     </main>
 
-    <!-- Pie de página -->
-    <footer class="footer">
-        <div class="footer-section">
-            <h3>Navegación Rápida</h3>
-            <ul>
-                <li><a href="/inicio/index.html">Inicio</a></li>
-                <li><a href="/error-404/index.html">Ofertas</a></li>
-                <li><a href="/login/index.html">Login</a></li>
-                <li><a href="/register/index.html">Registro</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h3>Información de Contacto</h3>
-            <ul>
-                <li>Contacto: <a href="mailto:soportetecnico@skytrack.com">soportetecnico@skytrack.com</a></li>
-                <li>Teléfono: +34 123 456 789</li>
-                <li>Dirección: C. Amiel, 11012, Cádiz</li>
-                <li><a href="/contacto/index.html">¿Necesitas ayuda? Soporte</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h3>Legal</h3>
-            <ul>
-                <li><a href="#">Términos y Condiciones</a></li>
-                <li><a href="#">Política de Privacidad</a></li>
-                <li><a href="#">Políticas y Términos Legales</a></li>
-            </ul>
-        </div>
-        <div class="footer-section social-media">
-            <h3>Redes Sociales</h3>
-            <p>Síguenos en:</p>
-            <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
-        </div>
-    </footer>
+<!-- Pie de página -->
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Navegación Rápida</h3>
+        <ul>
+          <li><a href="../inicio/index.html">Inicio</a></li>
+          <li><a href="../vuelos/index.html">Ofertas</a></li>
+          <li><a href="../login/index.html">Login</a></li>
+          <li><a href="../register/index.html">Registro</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Información de Contacto</h3>
+        <ul>
+          <li>Contacto: <a href="mailto:soportetecnico@skytrack.com">soportetecnico@skytrack.com</a></li>
+          <li>Teléfono: +34 123 456 789</li>
+          <li>Dirección: C. Amiel, 11012, Cádiz</li>
+          <li><a href="../contacto/index.html">¿Necesitas ayuda? Soporte</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Términos y Políticas</h3>
+        <ul>
+          <li><a href="terms.html">Términos y Condiciones</a></li>
+          <li><a href="privacy.html">Política de Privacidad</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Redes Sociales</h3>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <ul class="social-media">
+          <li><a href="https://facebook.com" target="_blank" aria-label="Facebook">Facebook</a></li>
+          <li><a href="https://twitter.com" target="_blank" aria-label="Twitter">Twitter</a></li>
+          <li><a href="https://instagram.com" target="_blank" aria-label="Instagram">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 SkyTrack. Todos los derechos reservados.</p>
+    </div>
+  </footer> 
 </body>
 </html>
