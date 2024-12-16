@@ -58,6 +58,11 @@ Se ha elegido la tipografía **Roboto** (disponible en Google Fonts) por su clar
 - **Interfaz Consistente:** Se ha mantenido un diseño coherente entre todas las páginas, facilitando la navegación del usuario.
 - **Accesibilidad:** Se han tenido en cuenta principios básicos de accesibilidad, como el contraste entre texto y fondo, para asegurar una experiencia inclusiva.
 
+## 7. Validaciones
+
+He comprobado todos los archivos de cada página web con la web de [CSS-VALIDATOR](https://jigsaw.w3.org/css-validator/).
+Me ha salido todos los archivos correctos, por lo que están bien hechos.
+
 ## 7. Video del Proyecto
 
 He preparado un video donde explico el diseño y las decisiones tomadas durante el desarrollo de la interfaz de usuario. Puedes verlo en el siguiente enlace:
