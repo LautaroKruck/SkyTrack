@@ -10,87 +10,118 @@
 <body>
     <!-- Encabezado -->
     <header class="header">
-        <h1>SkyTrack</h1>
-        <a href="#" class="btn-back">Volver</a>
+      <!-- Logo y título -->
+      <div class="header-top">
+          <h1 class="web-title">
+              <a href="../inicio/index.html" class="logo-link">SkyTrack</a>
+          </h1>
+          <a href="../inicio/index.html" class="btn-back">Volver</a>
+      </div>
+      <!-- Opcional: Barra secundaria -->
+      <nav class="header-nav">
+          <ul>
+              <li><a href="../perfil/index.html">Perfil</a></li>
+              <li><a href="../error-404/index.html">Favoritos</a></li>
+              <li><a href="../error-404/index.html">Configuración</a></li>
+          </ul>
+      </nav>
     </header>
     
     <!-- Main -->
     <main class="flight-list">
         <h2>Vuelos Destacados</h2>
         <div class="flights-container">
-            <!-- Fila 1 -->
-            <div class="flight-row">
-                <!-- Vuelo 1 -->
-                <div class="flight-card">
-                    <h3>Madrid - Barcelona</h3>
-                    <p><strong>Salida:</strong> 10:00 AM, 12 Dic 2024</p>
-                    <p><strong>Llegada:</strong> 12:00 PM, 12 Dic 2024</p>
-                    <p><strong>Aerolínea:</strong> Iberia</p>
-                    <p><strong>Duración:</strong> 2 horas</p>
-                    <p><strong>Clase Turista:</strong> €80</p>
-                    <p><strong>Business Class:</strong> €300</p>
-                    <a href="detalles-vuelo.html" class="details-btn">Ver detalles</a>
-                </div>
-                <!-- Vuelo 2 -->
-                <div class="flight-card">
-                    <h3>Sevilla - Valencia</h3>
-                    <p><strong>Salida:</strong> 8:00 AM, 12 Dic 2024</p>
-                    <p><strong>Llegada:</strong> 9:30 AM, 12 Dic 2024</p>
-                    <p><strong>Aerolínea:</strong> Vueling</p>
-                    <p><strong>Duración:</strong> 1 hora 30 minutos</p>
-                    <p><strong>Clase Turista:</strong> €60</p>
-                    <p><strong>Business Class:</strong> €200</p>
-                    <a href="detalles-vuelo.html" class="details-btn">Ver detalles</a>
-                </div>
-                <!-- Vuelo 3 -->
-                <div class="flight-card">
-                    <h3>Bilbao - París</h3>
-                    <p><strong>Salida:</strong> 6:00 PM, 12 Dic 2024</p>
-                    <p><strong>Llegada:</strong> 8:15 PM, 12 Dic 2024</p>
-                    <p><strong>Aerolínea:</strong> Air France</p>
-                    <p><strong>Duración:</strong> 2 horas 15 minutos</p>
-                    <p><strong>Clase Turista:</strong> €120</p>
-                    <p><strong>Business Class:</strong> €450</p>
-                    <a href="detalles-vuelo.html" class="details-btn">Ver detalles</a>
-                </div>
+          <!-- Fila 1 -->
+          <div class="flight-row">
+            <!-- Vuelo 1 -->
+            <div class="flight-card">
+              <img src="../vuelos/images/barcelona.jpg" alt="Imagen de Barcelona" class="flight-image">
+              <div class="flight-details">
+                <h3>Madrid - Barcelona</h3>
+                <p><strong>Salida:</strong> 10:00 AM, 12 Dic 2024</p>
+                <p><strong>Llegada:</strong> 12:00 PM, 12 Dic 2024</p>
+                <p><strong>Aerolínea:</strong> Iberia</p>
+                <p><strong>Duración:</strong> 2 horas</p>
+                <p><strong>Clase Turista:</strong> €80</p>
+                <p><strong>Business Class:</strong> €300</p>
+                <a href="../error-404/index.html" class="details-btn">Ver detalles</a>
+              </div>
             </div>
-            <!-- Fila 2 -->
-            <div class="flight-row">
-                <!-- Vuelo 1 -->
-                <div class="flight-card">
-                    <h3>Madrid - Barcelona</h3>
-                    <p><strong>Salida:</strong> 10:00 AM, 12 Dic 2024</p>
-                    <p><strong>Llegada:</strong> 12:00 PM, 12 Dic 2024</p>
-                    <p><strong>Aerolínea:</strong> Iberia</p>
-                    <p><strong>Duración:</strong> 2 horas</p>
-                    <p><strong>Clase Turista:</strong> €80</p>
-                    <p><strong>Business Class:</strong> €300</p>
-                    <a href="detalles-vuelo.html" class="details-btn">Ver detalles</a>
-                </div>
-                <!-- Vuelo 2 -->
-                <div class="flight-card">
-                    <h3>Sevilla - Valencia</h3>
-                    <p><strong>Salida:</strong> 8:00 AM, 12 Dic 2024</p>
-                    <p><strong>Llegada:</strong> 9:30 AM, 12 Dic 2024</p>
-                    <p><strong>Aerolínea:</strong> Vueling</p>
-                    <p><strong>Duración:</strong> 1 hora 30 minutos</p>
-                    <p><strong>Clase Turista:</strong> €60</p>
-                    <p><strong>Business Class:</strong> €200</p>
-                    <a href="detalles-vuelo.html" class="details-btn">Ver detalles</a>
-                </div>
-                <!-- Vuelo 3 -->
-                <div class="flight-card">
-                    <h3>Bilbao - París</h3>
-                    <p><strong>Salida:</strong> 6:00 PM, 12 Dic 2024</p>
-                    <p><strong>Llegada:</strong> 8:15 PM, 12 Dic 2024</p>
-                    <p><strong>Aerolínea:</strong> Air France</p>
-                    <p><strong>Duración:</strong> 2 horas 15 minutos</p>
-                    <p><strong>Clase Turista:</strong> €120</p>
-                    <p><strong>Business Class:</strong> €450</p>
-                    <a href="detalles-vuelo.html" class="details-btn">Ver detalles</a>
-                </div>
+            <!-- Vuelo 2 -->
+            <div class="flight-card">
+              <img src="../vuelos/images/valencia.jpg" alt="Imagen de Valencia" class="flight-image">
+              <div class="flight-details">
+                <h3>Sevilla - Valencia</h3>
+                <p><strong>Salida:</strong> 8:00 AM, 12 Dic 2024</p>
+                <p><strong>Llegada:</strong> 9:30 AM, 12 Dic 2024</p>
+                <p><strong>Aerolínea:</strong> Vueling</p>
+                <p><strong>Duración:</strong> 1 hora 30 minutos</p>
+                <p><strong>Clase Turista:</strong> €60</p>
+                <p><strong>Business Class:</strong> €200</p>
+                <a href="../error-404/index.html" class="details-btn">Ver detalles</a>
+              </div>
             </div>
-        </div>
+            <!-- Vuelo 3 -->
+            <div class="flight-card">
+              <img src="../vuelos/images/paris.jpg" alt="Imagen de París" class="flight-image">
+              <div class="flight-details">
+                <h3>Bilbao - París</h3>
+                <p><strong>Salida:</strong> 6:00 PM, 12 Dic 2024</p>
+                <p><strong>Llegada:</strong> 8:15 PM, 12 Dic 2024</p>
+                <p><strong>Aerolínea:</strong> Air France</p>
+                <p><strong>Duración:</strong> 2 horas 15 minutos</p>
+                <p><strong>Clase Turista:</strong> €120</p>
+                <p><strong>Business Class:</strong> €450</p>
+                <a href="../error-404/index.html" class="details-btn">Ver detalles</a>
+              </div>
+            </div>
+          </div>
+          <!-- Fila 2 -->
+          <div class="flight-row">
+            <!-- Vuelo 4 -->
+            <div class="flight-card">
+              <img src="../vuelos/images/madrid.jpg" alt="Imagen de Madrid" class="flight-image">
+              <div class="flight-details">
+                <h3>Barcelona - Madrid</h3>
+                <p><strong>Salida:</strong> 10:00 AM, 12 Dic 2024</p>
+                <p><strong>Llegada:</strong> 12:00 PM, 12 Dic 2024</p>
+                <p><strong>Aerolínea:</strong> Iberia</p>
+                <p><strong>Duración:</strong> 2 horas</p>
+                <p><strong>Clase Turista:</strong> €80</p>
+                <p><strong>Business Class:</strong> €300</p>
+                <a href="../error-404/index.html" class="details-btn">Ver detalles</a>
+              </div>
+            </div>
+            <!-- Vuelo 5 -->
+            <div class="flight-card">
+              <img src="../vuelos/images/roma.jpg" alt="Imagen de Roma" class="flight-image">
+              <div class="flight-details">
+                <h3>Sevilla - Roma</h3>
+                <p><strong>Salida:</strong> 8:00 AM, 12 Dic 2024</p>
+                <p><strong>Llegada:</strong> 9:30 AM, 12 Dic 2024</p>
+                <p><strong>Aerolínea:</strong> Vueling</p>
+                <p><strong>Duración:</strong> 1 hora 30 minutos</p>
+                <p><strong>Clase Turista:</strong> €60</p>
+                <p><strong>Business Class:</strong> €200</p>
+                <a href="../error-404/index.html" class="details-btn">Ver detalles</a>
+              </div>
+            </div>
+            <!-- Vuelo 6 -->
+            <div class="flight-card">
+              <img src="../vuelos/images/londres.jpg" alt="Imagen de Londres" class="flight-image">
+              <div class="flight-details">
+                <h3>Sevilla - Londres</h3>
+                <p><strong>Salida:</strong> 6:00 PM, 12 Dic 2024</p>
+                <p><strong>Llegada:</strong> 8:15 PM, 12 Dic 2024</p>
+                <p><strong>Aerolínea:</strong> Air France</p>
+                <p><strong>Duración:</strong> 2 horas 15 minutos</p>
+                <p><strong>Clase Turista:</strong> €120</p>
+                <p><strong>Business Class:</strong> €450</p>
+                <a href="../error-404/index.html" class="details-btn">Ver detalles</a>
+              </div>
+            </div>
+          </div>
+        </div>        
     </main>
 
 <!-- Pie de página -->
@@ -117,8 +148,8 @@
       <div class="footer-section">
         <h3>Términos y Políticas</h3>
         <ul>
-          <li><a href="terms.html">Términos y Condiciones</a></li>
-          <li><a href="privacy.html">Política de Privacidad</a></li>
+          <li><a href="../politica-terminos/terminos.html">Términos y Condiciones</a></li>
+          <li><a href="../politica-terminos/politica.html">Política de Privacidad</a></li>
         </ul>
       </div>
       <div class="footer-section">

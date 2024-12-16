@@ -15,38 +15,95 @@ body {
 
 /* Header Styles */
 .header {
-  background: #003366;
-  color: white;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #003366;
+  border-bottom: 2px solid #ccc;
+}
+
+.header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
-.header h1 {
-  font-size: 24px;
+.web-title {
+  font-size: 1.8rem;
+  color: #333;
 }
 
-.header .btn-back {
-  color: white;
+.logo-link {
   text-decoration: none;
-  font-size: 18px;
+  color: #fff;
+}
+
+.logo-link:hover {
+  text-decoration: none;
+  color: #1e90ff;
+}
+
+.btn-back {
+  padding: 0.5rem 1rem;
+  background-color: #1e90ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.btn-back:hover {
+  background-color: #0056b3;
+}
+
+/* Barra de navegación secundaria */
+.header-nav {
+  margin-top: 0.5rem;
+  width: 100%;
+  background-color: #e0e0e0;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.header-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.header-nav ul li a:hover {
+  color: #1e90ff;
 }
 
 /* Main Styles */
 .flight-list {
   font-family: Arial, sans-serif;
   margin: 20px auto;
-  max-width: 1200px;
+  max-width: 1300px;
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Mejora el diseño visual */
 }
 
 .flight-list h2 {
   text-align: center;
   margin-bottom: 20px;
   color: #333;
+  font-size: 24px; /* Define un tamaño más claro */
 }
 
 .flights-container {
@@ -59,28 +116,47 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 15px;
+  flex-wrap: wrap; /* Asegura un diseño más adaptable */
 }
 
 .flight-card {
-  flex: 1;
-  padding: 15px;
-  background-color: white;
-  border: 1px solid #ddd;
+  display: flex;
+  gap: 15px;
+  border: 1px solid #ccc;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: left;
+  padding: 15px;
+  align-items: center;
+  background-color: white; /* Mejora la separación visual */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animación sutil */
+}
+
+.flight-card:hover {
+  transform: translateY(-5px); /* Efecto al pasar el cursor */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .flight-card h3 {
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   color: #007BFF;
+  font-weight: bold;
 }
 
 .flight-card p {
   font-size: 14px;
   margin: 5px 0;
   color: #555;
+}
+
+.flight-image {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover; /* Mantiene la proporción de las imágenes */
+}
+
+.flight-details {
+  flex: 1;
 }
 
 .details-btn {
@@ -93,6 +169,7 @@ body {
   border-radius: 4px;
   font-size: 14px;
   text-align: center;
+  transition: background-color 0.2s ease; /* Mejora el hover */
 }
 
 .details-btn:hover {
@@ -102,30 +179,24 @@ body {
 
 @media (max-width: 768px) {
   .flight-row {
-      flex-direction: column;
+    flex-direction: column; /* Alinea elementos en columna en pantallas pequeñas */
   }
-}
 
+  .flight-card {
+    flex-direction: column; /* Mejora el diseño responsive */
+    text-align: center;
+  }
 
-/* Página de error */
-.error-page {
-  grid-area: main;
-  text-align: center;
-  background-color: #fff;
-  padding: 40px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+  .flight-image {
+    width: 100%; /* Ajusta el ancho al contenedor */
+    max-width: 300px;
+    margin: 0 auto; /* Centra la imagen */
+  }
 
-.error-page h1 {
-  margin-top: 0;
-  font-size: 2rem;
-  color: #cc0000;
-}
-
-.error-page p {
-  font-size: 1.2rem;
-  color: #666;
+  .details-btn {
+    width: fit-content; /* Ajusta el botón al contenido */
+    margin: 10px auto; /* Centra el botón */
+  }
 }
 
 /* Pie de página */
