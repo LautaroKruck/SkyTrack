@@ -63,7 +63,7 @@ Se ha elegido la tipografía **Roboto** (disponible en Google Fonts) por su clar
 He comprobado todos los archivos de cada página web con la web de [CSS-VALIDATOR](https://jigsaw.w3.org/css-validator/).
 Me ha salido todos los archivos correctos, por lo que están bien hechos.
 
-## 7. Video del Proyecto
+## 8. Video del Proyecto
 
 He preparado un video donde explico el diseño y las decisiones tomadas durante el desarrollo de la interfaz de usuario. Puedes verlo en el siguiente enlace:
 
